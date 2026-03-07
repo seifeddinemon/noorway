@@ -59,3 +59,4 @@ flutter_launcher_icons:
   image_path: "assets/images/logo_noorfaith.png"
   adaptive_icon_background: "#083B2E"  # AppColors.primaryEmerald
   adaptive_icon_foreground: "assets/images/logo_noorfaith.png"
+  remove_alpha_ios: true
