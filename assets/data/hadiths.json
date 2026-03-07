@@ -1,0 +1,42 @@
+[
+    {
+        "id": "h1",
+        "category": "Faith",
+        "category_ar": "الإيمان",
+        "text": "The Prophet (ﷺ) said: 'None of you [truly] believes until he loves for his brother what he loves for himself.'",
+        "text_ar": "قال النبي ﷺ: «لا يؤمن أحدكم حتى يحب لأخيه ما يحب لنفسه»",
+        "source": "Bukhari & Muslim"
+    },
+    {
+        "id": "h2",
+        "category": "Manners",
+        "category_ar": "الأخلاق",
+        "text": "The Prophet (ﷺ) said: 'The most beloved of path of Allah to me is the most useful [person] to the people.'",
+        "text_ar": "قال النبي ﷺ: «أحب الناس إلى الله أنفعهم للناس»",
+        "source": "Al-Mu'jam al-Awsat"
+    },
+    {
+        "id": "h3",
+        "category": "Intentions",
+        "category_ar": "النيات",
+        "text": "The Prophet (ﷺ) said: 'Actions are but by intentions, and every man shall have only that which he intended.'",
+        "text_ar": "قال النبي ﷺ: «إنما الأعمال بالنيات، وإنما لكل امرئ ما نوى»",
+        "source": "Bukhari & Muslim"
+    },
+    {
+        "id": "h4",
+        "category": "Patience",
+        "category_ar": "الصبر",
+        "text": "The Prophet (ﷺ) said: 'True patience is at the first stroke of a calamity.'",
+        "text_ar": "قال النبي ﷺ: «إنما الصبر عند الصدمة الأولى»",
+        "source": "Bukhari"
+    },
+    {
+        "id": "h5",
+        "category": "Mercy",
+        "category_ar": "الرحمة",
+        "text": "The Prophet (ﷺ) said: 'Those who are merciful will be shown mercy by the Most Merciful. Be merciful to those on the earth and the One in the heavens will have mercy upon you.'",
+        "text_ar": "قال النبي ﷺ: «الراحمون يرحمهم الرحمن، ارحموا من في الأرض يرحمكم من في السماء»",
+        "source": "Tirmidhi"
+    }
+]

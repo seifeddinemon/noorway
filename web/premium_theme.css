@@ -1,0 +1,262 @@
+:root {
+  /* Color Palette - 2026 Trend: Deep, saturated jewel tones */
+  --emerald-950: #011a14;
+  --emerald-900: #022c22;
+  --emerald-800: #064e3b;
+  --gold-primary: #d4af37;
+  --gold-vibrant: #ffcc33;
+  --gold-soft: #f3e5ab;
+  --gold-glow: rgba(212, 175, 55, 0.4);
+
+  /* Backgrounds */
+  --bg-gradient: radial-gradient(circle at 50% -20%, var(--emerald-800) 0%, var(--emerald-950) 100%);
+
+  /* Glassmorphism - Multi-layered & High Gloss */
+  --glass-bg: rgba(255, 255, 255, 0.03);
+  --glass-border: rgba(255, 255, 255, 0.08);
+  --glass-blur: blur(25px);
+  --glass-shadow: 0 15px 35px rgba(0, 0, 0, 0.5),
+    inset 0 0 1px 1px rgba(255, 255, 255, 0.05);
+
+  /* Typography */
+  --font-arabic: 'Noto Kufi Arabic', sans-serif;
+
+  /* Spacing & Borders */
+  --border-radius-lg: 32px;
+  --border-radius-md: 20px;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background: #000;
+  /* Outer background */
+  min-height: 100vh;
+  font-family: var(--font-arabic);
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.iphone-mockup {
+  width: 375px;
+  height: 812px;
+  background: var(--bg-gradient);
+  border: 4px solid #333;
+  /* Thinner sophisticated border */
+  border-radius: 55px;
+  /* More modern rounded corners */
+  position: relative;
+  overflow: hidden;
+  box-shadow: 0 50px 100px rgba(0, 0, 0, 0.8);
+}
+
+/* Subtle noise texture for premium feel */
+.iphone-mockup::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-image: url("https://www.transparenttextures.com/patterns/asfalt-dark.png");
+  opacity: 0.05;
+  pointer-events: none;
+  z-index: 1;
+}
+
+.status-bar {
+  height: 44px;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 35px;
+  align-items: center;
+  font-size: 14px;
+  font-weight: 600;
+  z-index: 10;
+}
+
+.dashboard {
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 28px;
+  position: relative;
+  z-index: 2;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.greeting h1 {
+  font-size: 26px;
+  margin: 0;
+  font-weight: 700;
+  letter-spacing: -0.5px;
+}
+
+.greeting p {
+  font-size: 13px;
+  color: var(--gold-soft);
+  opacity: 0.9;
+  margin: 4px 0 0 0;
+  font-weight: 300;
+}
+
+.glass-card {
+  background: var(--glass-bg);
+  backdrop-filter: var(--glass-blur);
+  -webkit-backdrop-filter: var(--glass-blur);
+  border: 1px solid var(--glass-border);
+  border-radius: var(--border-radius-lg);
+  padding: 24px;
+  box-shadow: var(--glass-shadow);
+  transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.glass-card:hover {
+  transform: translateY(-8px) scale(1.02);
+  border-color: rgba(212, 175, 55, 0.3);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.6), 0 0 20px rgba(212, 175, 55, 0.1);
+}
+
+.prayer-time-main {
+  text-align: center;
+  position: relative;
+  padding: 30px 20px;
+  overflow: hidden;
+}
+
+/* Internal glow for prayer card */
+.prayer-time-main::after {
+  content: "";
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  background: radial-gradient(circle, rgba(212, 175, 55, 0.05) 0%, transparent 70%);
+  pointer-events: none;
+}
+
+.prayer-time-main .next-prayer {
+  font-size: 14px;
+  color: var(--gold-primary);
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  font-weight: 600;
+}
+
+.prayer-time-main .time {
+  font-size: 56px;
+  font-weight: 800;
+  margin: 12px 0;
+  background: linear-gradient(180deg, #fff 30%, #ffd700 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  filter: drop-shadow(0 0 10px rgba(255, 255, 255, 0.2));
+}
+
+.grid-menu {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+.menu-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+  padding: 20px 10px;
+  border-radius: var(--border-radius-md);
+}
+
+.icon-holder {
+  width: 64px;
+  height: 64px;
+  background: linear-gradient(135deg, #1a1a1a 0%, #000 100%);
+  border: 1px solid rgba(212, 175, 55, 0.3);
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 28px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.4), inset 0 0 10px rgba(212, 175, 55, 0.1);
+  position: relative;
+}
+
+/* 3D gradient effect for icons */
+.icon-holder::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: 20px;
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), transparent);
+  pointer-events: none;
+}
+
+.menu-item span {
+  font-size: 14px;
+  font-weight: 600;
+  color: rgba(255, 255, 255, 0.9);
+}
+
+.bottom-nav {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 90px;
+  background: rgba(1, 26, 20, 0.8);
+  backdrop-filter: blur(20px);
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding-bottom: 25px;
+  border-top: 1px solid rgba(255, 255, 255, 0.05);
+  z-index: 10;
+}
+
+.nav-item {
+  font-size: 22px;
+  color: rgba(255, 255, 255, 0.3);
+  transition: all 0.3s ease;
+}
+
+.nav-item.active {
+  color: var(--gold-primary);
+  transform: scale(1.1);
+  filter: drop-shadow(0 0 8px var(--gold-glow));
+}
+
+.nav-item.center-btn {
+  width: 60px;
+  height: 60px;
+  background: linear-gradient(135deg, var(--gold-primary), #8b6b00);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 30px;
+  color: var(--emerald-950);
+  transform: translateY(-20px);
+  box-shadow: 0 10px 25px rgba(212, 175, 55, 0.4);
+  border: 4px solid var(--emerald-950);
+}
+
+/* Pattern Overlay - Intricate Modern Geometric */
+.pattern-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('data:image/svg+xml;utf8,<svg width="100" height="100" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg"><path d="M50 0L60 40L100 50L60 60L50 100L40 60L0 50L40 40Z" fill="white" fill-opacity="0.02"/></svg>');
+  background-size: 120px 120px;
+  pointer-events: none;
+  z-index: 1;
+}
