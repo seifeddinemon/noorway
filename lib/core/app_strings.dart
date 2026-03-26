@@ -36,6 +36,9 @@ class AppStrings {
       'location_disabled':
           'خدمات الموقع (GPS) معطلة. يرجى تفعيلها لتحديد القبلة',
       'location_denied': 'تم رفض صلاحية الموقع. يرجى السماح بها لتحديد القبلة',
+      'compass_unsupported': 'عذراً، هاتفك لا يدعم مستشعر البوصلة',
+      'waiting_for_gps':
+          'جاري تحديد الموقع... يرجى الوقوف قرب نافذة وتحريك الهاتف',
       'enable_location': 'تفعيل الموقع',
       'retry': 'إعادة المحاولة',
       'stories': 'القصص',
@@ -201,6 +204,10 @@ class AppStrings {
       'quran': 'Holy Quran',
       'location_disabled': 'Location services are disabled. Please enable them',
       'location_denied': 'Location permission denied. Please allow it',
+      'compass_unsupported':
+          'Sorry, your device does not support a compass sensor',
+      'waiting_for_gps':
+          'Waiting for GPS... Please stand near a window and move your phone',
       'enable_location': 'Enable Location',
       'open_settings': 'Open Settings',
       'retry': 'Retry',
